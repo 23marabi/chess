@@ -4,7 +4,7 @@ description = "Test chess program for fun and learning."
 authors = ["Erin A. <contact@the-system.eu.org>"]
 repository = "https://github.com/23marabi/chess"
 license = "CNPLv7+"
-version = "alpha-0.1.0"
+version = "0.1.0-alpha"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
