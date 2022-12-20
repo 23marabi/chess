@@ -137,8 +137,24 @@ pub trait Board {
     fn as_array(&self) -> [&[Piece; 8]; 8];
 }
 
+// impl fmt::Display for BaseBoard {
+//     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+//         let row_str: &str = "{}{}{}{}{}{}{}{}";
+//         let mut rows: [&str; 8];
+//         let mut rows_str: &str;
+//         for i in 0..8 {
+//             rows[i] = format!(row_str, self.as_array()[i]);
+//         }
+//         for x in 0..8 {
+//             rows_str = format!("{}{}", rows_str, rows[x]);
+//         }
+//         write!(f, rows_str)
+//     }
+// }
+
 impl Board for BaseBoard {
     /// Implement the ability to create a new blank 8x8 chess board.
+    /// TODO: FEN string -> board
     fn new() -> BaseBoard {
         BaseBoard {
             rank8: [
